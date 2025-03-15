@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.tab{
+  width: 512px;
+  height: 768px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.3),
+    rgba(0,0,0,0.2), 
+  ); 
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  border : 3px solid tomato;
+  align-items: center;
+}
+
+.row-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border : 3px solid hotpink;
+}
+.row-container .item{
+  padding: 5px 10px 5px 10px;
+  flex-basis: auto;
+  flex-grow :0;
+  border : 3px solid powderblue;
+}
+
+.column-container{
+  display: flex;
+  flex-direction: column;
+  width: min(100%,1280px);
+  border : 3px solid black;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 10px 0px 10px 0px ;
+}
+

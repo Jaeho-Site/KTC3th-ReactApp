@@ -1,0 +1,276 @@
+.test-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--text-primary);
+  /* 배경 관련 스타일 제거 */
+}
+
+.test-page-section {
+  display: flex;
+  min-height: 100vh;
+  padding: 2rem;
+  align-items: center;
+  /* 배경 관련 스타일 제거 */
+}
+
+.test-page-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 2rem;
+}
+
+.test-page-text-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.test-page-title {
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico', cursive !important;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.test-page-subtitle {
+  color: white;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.test-page-description {
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.test-page-button-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center; 
+  gap: 2rem; 
+}
+
+.test-page-button {
+  font-size: 2.4rem; 
+  padding: 30px 60px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 60px; 
+  transition: all 0.3s ease;
+  width: 150px;
+  height : 60px;
+}
+
+.test-page-button-primary {
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1); 
+}
+
+.test-page-button-primary:hover {
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 16px rgba(0,0,0,0.15);
+}
+
+.test-page-button-secondary {
+  border-width: 4px; 
+}
+
+.test-page-button-secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+
+.test-page-video-container {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 60vh; /* 뷰포트 높이의 60%로 제한 */
+  height: 60vh; /* 추가: 컨테이너의 높이를 60vh로 고정 */
+}
+
+.test-page-video {
+  width: 100%;
+  height: 100%;
+  max-height: 60vh; /* 뷰포트 높이의 60%로 제한 */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex; /* 추가: flexbox 사용 */
+  justify-content: center; /* 추가: 수평 중앙 정렬 */
+  align-items: center; /* 추가: 수직 중앙 정렬 */
+}
+
+.test-page-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain; /* 변경: cover에서 contain으로 변경 */
+}
+
+/* 기존 스타일 유지 */
+
+.test-page-section-2 {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.video-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.video-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-box-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.video-box-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-box-text-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-box-description {
+  text-align: center;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  min-height: 200px; /* 텍스트 공간을 더 길게 */
+}
+
+@media (max-width: 1200px) {
+  .video-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .video-box-description {
+    min-height: auto; /* 모바일에서는 최소 높이 제거 */
+  }
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) {
+  .test-page-title {
+    font-size: 2.5rem;
+  }
+
+  .test-page-subtitle,
+  .test-page-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .test-page-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .test-page-content {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .test-page-video-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .video-box-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video-box {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .test-page-title {
+    font-size: 2rem;
+  }
+
+  .test-page-subtitle,
+  .test-page-description {
+    font-size: 1.2rem;
+  }
+
+  .test-page-button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .test-page-button {
+    margin-bottom: 1rem;
+  }
+}
+
+.test-page-section-with-background {
+  position: relative;
+}
+
+.carousel__slides {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+}

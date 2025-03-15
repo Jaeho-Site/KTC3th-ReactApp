@@ -1,0 +1,460 @@
+.my-page {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 680px;
+  margin: 0 20px;
+}
+
+.outer-rectangle {
+  position: absolute;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #111727;
+  border-radius: 44px;
+}
+
+.inner-rectangle {
+  position: absolute;
+  width: calc(100% - 8px);
+  max-width: 892px;
+  height: 592px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #FEFAF5;
+  border: 2px solid #111727;
+  border-radius: 44px;
+}
+
+.info-container {
+  position: absolute;
+  width: calc(50% - 60px);
+  height: 510px;
+  background: #FFFFFD;
+  border: 2px solid #111727;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container {
+  left: 40px;
+  top: 40px;
+}
+
+.left-container .MuiBox-root {
+  margin-top: 90px;
+  margin-bottom: 40px !important;
+}
+
+.right-container {
+  right: 40px;
+  top: 40px;
+}
+
+.right-container .MuiGrid-container {
+  margin-top: 30px;
+}
+
+.square-info-item {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border: 1px solid #111727;
+  margin-bottom: 15px;
+}
+
+.square-info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.square-info-content {
+  text-align: center;
+}
+
+.rectangle-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border: 1px solid #111727;
+  width: 100%;
+}
+
+.icon-wrapper {
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.info-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.stats-item {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.stats-item .MuiBox-root {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #111727;
+  text-align: center;
+  margin: 0 0 40px;
+  padding-top: 20px;
+}
+
+.letter-box {
+  margin-top: 30px;
+  padding: 30px;
+  background: #FFFFFF;
+  border: 2px solid #111727;
+  border-radius: 12px;
+  position: relative;
+  min-height: 140px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+}
+
+.letter-box::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  background: #FFFFFF;
+  border-top: 2px solid #111727;
+  border-left: 2px solid #111727;
+  transform: rotate(45deg);
+}
+
+.letter-box::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: url('../assets/images/image24.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.letter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.letter-greeting {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  font-size: 28px;
+  color: #424A7E;
+  font-style: italic;
+}
+
+.letter-message {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.letter-signature {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  font-size: 22px;
+  color: #424A7E;
+  text-align: right;
+  font-style: italic;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;
+  position: relative;
+}
+
+.custom-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  background-color: #424A7E !important;
+  border: 2px solid #111727 !important;
+  font-size: 2.8rem !important;
+  transition: all 0.3s ease;
+  margin-top: 80px;
+}
+
+.camera-icon {
+  position: absolute !important;
+  bottom: 0 !important;
+  right: calc(50% - 45px) !important;
+  background-color: #424A7E !important;
+  padding: 5px !important;
+  border: 2px solid #111727 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.camera-icon:hover {
+  background-color: #2d3456 !important;
+}
+
+.edit-icon {
+  cursor: pointer !important;
+  color: #424A7E !important;
+  margin-left: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.edit-icon:hover {
+  color: #2d3456 !important;
+}
+
+.icon-button {
+  padding: 4px !important;
+  min-width: auto !important;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    margin: 0 0 30px;
+    padding-top: 15px;
+  }
+
+  .custom-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-page {
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 0;
+    overflow: visible;
+  }
+
+  .main-container {
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .outer-rectangle,
+  .inner-rectangle {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    transform: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .inner-rectangle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .info-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .left-container,
+  .right-container {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .right-container {
+    margin-top: 20px;
+  }
+
+  .left-container .MuiBox-root {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  .title {
+    font-size: 28px;
+    margin: 0 0 25px;
+    padding-top: 10px;
+  }
+
+  .square-info-item {
+    height: auto;
+    min-height: 80px;
+  }
+
+  .left-container .MuiBox-root {
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+  }
+
+  .right-container .MuiGrid-container {
+    margin-top: 30px;
+  }
+
+  .letter-box {
+    margin-top: 20px;
+    min-height: 100px;
+  }
+
+  .custom-avatar {
+    width: 90px !important;
+    height: 90px !important;
+    font-size: 2.2rem !important;
+  }
+
+  .avatar-container {
+    margin: 0 0 30px;
+  }
+
+  .camera-icon {
+    right: calc(50% - 35px) !important;
+    padding: 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-page {
+    padding: 20px 0;
+  }
+
+  .main-container {
+    margin: 10px;
+  }
+
+  .outer-rectangle,
+  .inner-rectangle {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .inner-rectangle {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .info-container {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+
+  .square-info-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .square-info-item,
+  .rectangle-info-item {
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 0 0 20px;
+    padding-top: 8px;
+  }
+
+  .letter-box {
+    margin-top: 15px;
+    padding: 20px;
+    min-height: 120px;
+  }
+
+  .letter-greeting {
+    font-size: 18px;
+  }
+
+  .letter-message {
+    font-size: 14px;
+  }
+
+  .letter-signature {
+    font-size: 16px;
+  }
+
+  .custom-avatar {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 2rem !important;
+  }
+
+  .avatar-container {
+    margin: 0 0 25px;
+  }
+
+  .camera-icon {
+    right: calc(50% - 30px) !important;
+    padding: 3px !important;
+  }
+
+  .letter-box::after {
+    width: 80px;
+    height: 80px;
+    top: -15px;
+    right: -15px;
+  }
+}

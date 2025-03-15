@@ -1,0 +1,17 @@
+/* CustomTextField.css */
+.custom-textfield {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.custom-textfield-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .custom-textfield {
+    margin-bottom: 1.5rem;
+  }
+}

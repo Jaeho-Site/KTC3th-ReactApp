@@ -1,0 +1,28 @@
+/* CustomSlider.css */
+.custom-slider {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .custom-slider {
+    margin-bottom: 1.5rem;
+  }
+
+  .slider-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slider-value {
+    margin-top: 0.5rem;
+  }
+}

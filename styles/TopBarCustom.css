@@ -1,0 +1,62 @@
+/* TopBarCustom.css */
+:root {
+    --switch-color-light: #FD4B4B;
+    --switch-color-dark: #38618C;
+  }
+  
+.topbar {
+    background-color: var(--background-default); /* Uses theme background color */
+    color: var(--text-primary); /* Uses theme primary text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topbar-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .topbar-brand {
+    font-weight: bold;
+    color: var(--primary-main); /* Uses theme primary color for brand */
+  }
+  
+  .topbar-menu-button {
+    color: var(--text-primary); /* Uses theme primary text color for menu icon */
+  }
+  
+  .topbar-menu {
+    background-color: var(--background-paper); /* Uses theme paper background color */
+  }
+  
+  .topbar-menu-item {
+    color: var(--text-primary); /* Uses theme primary text color for menu items */
+  }
+  
+  .topbar-menu-item:hover {
+    background-color: var(--primary-light); /* Uses light version of primary color for hover */
+  }
+  
+  .topbar-language-button {
+    padding: 4px;
+  }
+  
+  .topbar-language-flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .topbar-theme-switch {
+    margin-left: 16px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .topbar-brand {
+      font-size: 1.2rem; /* Smaller font size on mobile */
+    }
+  
+    .topbar-menu-button {
+      margin-left: auto; /* Push menu button to the right on mobile */
+    }
+  }
